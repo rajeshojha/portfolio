@@ -11,7 +11,7 @@ export const projects = [
     title: "Release Dashboard Service",
     description:
       "Enterprise-grade platform aggregating key quality and performance data to drive data-informed engineering decisions.",
-    tags: ["Spring Boot", "REST API", "React", "PostgreSQL"],
+    tags: ["Java", "Spring Boot", "REST API", "PostgreSQL", "Kubernetes" ],
     icon: "Rocket",
     link: "#",
   },

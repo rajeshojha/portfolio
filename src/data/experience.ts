@@ -10,7 +10,7 @@ export const experience = [
   },
   {
     role: "Technical Lead",
-    company: "Inteliment Software",
+    company: "Intelliswift - An LTTS Company",
     period: "Oct 2017 — Dec 2020",
     description:
       "Led automation initiatives for customer-facing web and mobile applications by building scalable test frameworks, integrating CI/CD pipelines, and improving software quality.",
@@ -38,7 +38,7 @@ export const experience = [
   {
     role: "Freelance Software Engineer",
     company: "Self-employed",
-    period: "Dec 2013 — Jan 2015",
+    period: "Dec 2012 — Jan 2015",
     description:
       "Worked with clients across multiple industries to deliver manual and automated testing solutions, gaining early experience in software quality automation.",
     tech: ["Java", "Selenium WebDriver", "Manual Testing"],
