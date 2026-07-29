@@ -66,7 +66,7 @@ export default function Hero() {
           {/* Morphing blob with profile image */}
           <div className="w-full h-full animate-morph bg-gradient-to-br from-indigo-500 via-purple-500 to-violet-600 shadow-[0_20px_60px_rgba(99,102,241,0.3)] overflow-hidden flex items-center justify-center">
             <Image
-              src="/profile.jpg"
+              src="/profile.png"
               alt="Rajesh Ojha"
               width={380}
               height={380}
