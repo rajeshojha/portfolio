@@ -2,18 +2,34 @@
 
 import { motion } from "framer-motion";
 import { projects } from "@/data/projects";
-import { BarChart3, Rocket, ShieldCheck, ArrowRight } from "lucide-react";
+import { BarChart3, Rocket, ShieldCheck, RefreshCw, CreditCard, FileText, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 const iconMap: Record<string, React.ReactNode> = {
-  BarChart3: <BarChart3 size={24} className="text-[var(--color-accent-light)]" />,
+  BarChart3: (
+    <BarChart3 size={24} className="text-[var(--color-accent-light)]" />
+  ),
   Rocket: <Rocket size={24} className="text-[var(--color-accent-light)]" />,
-  ShieldCheck: <ShieldCheck size={24} className="text-[var(--color-accent-light)]" />,
+  ShieldCheck: (
+    <ShieldCheck size={24} className="text-[var(--color-accent-light)]" />
+  ),
+  RefreshCw: (
+    <RefreshCw size={24} className="text-[var(--color-accent-light)]" />
+  ),
+  CreditCard: (
+    <CreditCard size={24} className="text-[var(--color-accent-light)]" />
+  ),
+  FileText: (
+    <FileText size={24} className="text-[var(--color-accent-light)]" />
+  ),
 };
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-24 md:py-32 px-6 md:px-20 bg-[#111113]">
+    <section
+      id="projects"
+      className="py-24 md:py-32 px-6 md:px-20 bg-[#111113]"
+    >
       <motion.div
         className="mb-16"
         initial={{ opacity: 0, y: 20 }}
@@ -30,7 +46,7 @@ export default function Projects() {
       </motion.div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
-        {projects.map((project, index) => (
+        {projects.slice(0, 3).map((project, index) => (
           <motion.div
             key={project.title}
             className="group relative bg-[var(--color-card)] border border-[var(--color-border)] rounded-2xl p-8 transition-all duration-400 hover:-translate-y-2 hover:border-indigo-500/30 hover:shadow-[0_20px_60px_rgba(99,102,241,0.1)] overflow-hidden"
@@ -71,6 +87,21 @@ export default function Projects() {
           </motion.div>
         ))}
       </div>
+
+      <motion.div
+        className="mt-12 text-center"
+        initial={{ opacity: 0, y: 15 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+      >
+        <Link
+          href="/projects"
+          className="inline-flex items-center gap-2 px-7 py-3.5 bg-[var(--color-card)] border border-[var(--color-border)] rounded-full text-sm font-semibold text-[var(--color-accent-light)] hover:border-indigo-500/50 hover:-translate-y-0.5 hover:shadow-[0_8px_30px_rgba(99,102,241,0.15)] transition-all duration-300"
+        >
+          View All Projects <ArrowRight size={14} />
+        </Link>
+      </motion.div>
     </section>
   );
 }

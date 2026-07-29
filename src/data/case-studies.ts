@@ -58,8 +58,7 @@ export const caseStudies: Record<string, CaseStudy> = {
       "Provides send-to-email-preview before sending via dedicated preview endpoints",
     ],
     architecture: {
-      description:
-        "AI-Powered Report Generation Pipeline",
+      description: "AI-Powered Report Generation Pipeline",
       layers: [
         "Engineer / Program Manager",
         "React 19 + Ant Design → Report Builder UI",
@@ -73,11 +72,25 @@ export const caseStudies: Record<string, CaseStudy> = {
     techStack: [
       {
         category: "Frontend",
-        items: ["React 19", "Ant Design 5", "React Router 7", "React Draft", "Kusto", "Vite"],
+        items: [
+          "React 19",
+          "Ant Design 5",
+          "React Router 7",
+          "React Draft",
+          "Kusto",
+          "Vite",
+        ],
       },
       {
         category: "Backend",
-        items: ["Java 21", "Spring Boot 3.4", "Thymeleaf", "Jakarta", "Maven", "Express.js"],
+        items: [
+          "Java 21",
+          "Spring Boot 3.4",
+          "Thymeleaf",
+          "Jakarta",
+          "Maven",
+          "Express.js",
+        ],
       },
       {
         category: "Data & AI",
@@ -212,7 +225,14 @@ export const caseStudies: Record<string, CaseStudy> = {
     title: "Release Dashboard Service",
     tagline:
       "An enterprise-grade engineering quality metrics platform that aggregates code quality, defect data, test performance, and accessibility data points — enabling data-driven engineering decisions",
-    tags: ["Quality Signals", "Code Quality", "CI / Performance", "Automation", "Data-Driven", "Quality Strategy"],
+    tags: [
+      "Quality Signals",
+      "Code Quality",
+      "CI / Performance",
+      "Automation",
+      "Data-Driven",
+      "Quality Strategy",
+    ],
     overview:
       "Release Dashboard Service is a full-stack internal engineering quality/productivity platform built to eliminate manual reporting/metrics gathering across a large engineering organization. The web application aggregates data from 300+ quality signals, 94 automated checks, processes 40K+ data points daily, and has been running reliably for over 1 year — using React 18, Spring Boot 3.2, Google BigQuery, and REST APIs. The platform serves multiple engineering teams by consolidating quality signals, code metrics, test performance, accessibility compliance, and incident metrics — serving 40+ engineering teams across Walmart Fulfillment.",
     problems: [
@@ -249,7 +269,14 @@ export const caseStudies: Record<string, CaseStudy> = {
     techStack: [
       {
         category: "Frontend",
-        items: ["React 18", "Spring Boot 3.2", "Spring Data JPA", "Thymeleaf", "Luxon", "REST APIs"],
+        items: [
+          "React 18",
+          "Spring Boot 3.2",
+          "Spring Data JPA",
+          "Thymeleaf",
+          "Luxon",
+          "REST APIs",
+        ],
       },
       {
         category: "Backend",
@@ -261,7 +288,13 @@ export const caseStudies: Record<string, CaseStudy> = {
       },
       {
         category: "Infrastructure",
-        items: ["Docker", "Kubernetes", "Playwright", "SMTP/TLS", "Helm charts"],
+        items: [
+          "Docker",
+          "Kubernetes",
+          "Playwright",
+          "SMTP/TLS",
+          "Helm charts",
+        ],
       },
     ],
     features: [
@@ -388,12 +421,18 @@ export const caseStudies: Record<string, CaseStudy> = {
       },
     ],
   },
-  "qualityhub": {
+  qualityhub: {
     slug: "qualityhub",
     title: "QualityHub",
     tagline:
       "An enterprise-grade internal engineering quality/productivity platform that consolidates quality signals, defect tracking, accessibility compliance, and incident metrics — serving 50+ engineering teams",
-    tags: ["Engineering Productivity", "Quality Metrics", "Accessibility", "Automation", "Dashboard"],
+    tags: [
+      "Engineering Productivity",
+      "Quality Metrics",
+      "Accessibility",
+      "Automation",
+      "Dashboard",
+    ],
     overview:
       "QualityHub is an internal engineering quality productivity platform built to eliminate manual reporting/metrics gathering across Walmart Global Tech. The application consolidates 137 quality signals across 11 engineering domains, serving 50+ teams with 5 automated report types — using React 18, TypeScript, Node.js, D3.js for visualization, and Cosmos DB for persistence. The platform processes quality signals from multiple sources, aggregates data from Cosmos DB tables, generates visual reports and dashboards — serving as the single source of truth for engineering quality and release readiness across all Walmart Fulfillment teams.",
     problems: [
@@ -416,7 +455,8 @@ export const caseStudies: Record<string, CaseStudy> = {
       "Historical trend analysis with quarter-over-quarter and sprint-over-sprint comparison capabilities",
     ],
     architecture: {
-      description: "Omni Signals Architecture — Multi-Source Quality Aggregation",
+      description:
+        "Omni Signals Architecture — Multi-Source Quality Aggregation",
       layers: [
         "React 18 + TypeScript + D3.js → Dashboard UI",
         "Node.js + Express → API Gateway",
@@ -430,7 +470,14 @@ export const caseStudies: Record<string, CaseStudy> = {
     techStack: [
       {
         category: "Frontend",
-        items: ["React 18", "TypeScript", "D3.js", "Ant Design", "Recharts", "SASS/Modules"],
+        items: [
+          "React 18",
+          "TypeScript",
+          "D3.js",
+          "Ant Design",
+          "Recharts",
+          "SASS/Modules",
+        ],
       },
       {
         category: "Backend",
@@ -442,7 +489,14 @@ export const caseStudies: Record<string, CaseStudy> = {
       },
       {
         category: "Infrastructure",
-        items: ["Docker", "Kubernetes", "Azure DevOps", "Helm", "Nginx", "Prometheus"],
+        items: [
+          "Docker",
+          "Kubernetes",
+          "Azure DevOps",
+          "Helm",
+          "Nginx",
+          "Prometheus",
+        ],
       },
     ],
     features: [
@@ -540,7 +594,8 @@ export const caseStudies: Record<string, CaseStudy> = {
           "Team structures change quarterly, metrics get added/removed, thresholds shift. Building configuration-first with hot-reload capabilities meant zero downtime for organizational changes.",
       },
       {
-        title: "D3.js custom visuals pay off, but start with charting libraries",
+        title:
+          "D3.js custom visuals pay off, but start with charting libraries",
         description:
           "Started with Recharts for rapid prototyping, then progressively replaced with custom D3.js only where standard charts couldn't express the data. This hybrid approach saved months of development time.",
       },
@@ -563,6 +618,435 @@ export const caseStudies: Record<string, CaseStudy> = {
         title: "Incrementally validate with power users",
         description:
           "Shipping to 3 champion teams first, iterating on their feedback for 2 sprints, then rolling out org-wide. Those champions became internal advocates who trained other teams, reducing support burden by 80%.",
+      },
+    ],
+  },
+  "easy-returns": {
+    slug: "easy-returns",
+    title: "Easy Returns – Walmart US",
+    tagline:
+      "Mobile Express Returns — a groundbreaking solution blending the power of 4,700+ retail stores with the simplicity of the Walmart app",
+    tags: ["Automation", "Selenium", "Cross-Platform", "Mobile Testing", "CI/CD"],
+    overview:
+      "Returning a product used to mean waiting in long lines and dealing with paper receipts. Walmart turned that experience on its head by launching Mobile Express Returns — a groundbreaking solution blending the power of its 4,700+ retail stores with the simplicity of the Walmart app. The goal? Make returns as easy as purchases. The result? A seamless, digital-first experience that millions of users rely on every day. And I had the privilege to be part of the tech team making that vision a reality.",
+    problems: [
+      "Manual return processes required customers to wait in long lines with paper receipts",
+      "No digital-first experience for returns across 4,700+ Walmart stores",
+      "Regression testing took days due to complex return workflows across Web, iOS, and Android",
+      "Inconsistent test coverage across mobile and desktop platforms",
+      "No CI integration for automated test validation with every code commit",
+      "Quality feedback loops were slow — bugs discovered late in the release cycle",
+    ],
+    problemSummary:
+      "The return process was cumbersome for customers and lacked automated quality assurance, risking the experience for millions of daily users.",
+    solutions: [
+      "Analyzed complex return workflows and converted them into scalable, testable components",
+      "Designed functional test cases, traceability matrices, and comprehensive test plans mapped directly to real-world user behavior",
+      "Built cross-platform automation scripts using JavaScript and Node.js to run on desktop and mobile platforms — covering both happy paths and edge cases",
+      "Integrated tests into CI pipelines using Jenkins, ensuring early detection of bugs and vulnerabilities with every code commit",
+      "Helped cut down manual QA effort by over 60% while maintaining high test coverage and stability",
+      "Mentored and guided junior QA engineers, sharing best practices and reviewing test strategies",
+    ],
+    architecture: {
+      description: "Test Automation Architecture",
+      layers: [
+        "Walmart App (iOS + Android) + Web Portal",
+        "Selenium WebDriver + TestArmada Framework",
+        "Node.js Test Scripts (JavaScript)",
+        "Cross-Platform Execution: Desktop | Mobile | SauceLabs",
+        "Jenkins CI Pipeline → Automated Test Runs",
+        "JIRA + Confluence → Test Management & Reporting",
+      ],
+    },
+    techStack: [
+      {
+        category: "Automation",
+        items: ["Selenium WebDriver", "TestArmada Framework"],
+      },
+      {
+        category: "Languages",
+        items: ["JavaScript", "Node.js"],
+      },
+      {
+        category: "CI/CD",
+        items: ["Jenkins", "NPM"],
+      },
+      {
+        category: "Cross-Browser/Mobile",
+        items: ["SauceLabs"],
+      },
+      {
+        category: "Version Control & Collaboration",
+        items: ["Git", "JIRA", "Confluence"],
+      },
+    ],
+    features: [
+      {
+        title: "Cross-Platform Test Automation",
+        description:
+          "Unified test scripts running seamlessly across Web, iOS, and Android with a single codebase using Selenium and Node.js.",
+      },
+      {
+        title: "CI Pipeline Integration",
+        description:
+          "Automated test execution on every commit via Jenkins, catching regressions within minutes instead of days.",
+      },
+      {
+        title: "Mobile Express Returns Testing",
+        description:
+          "End-to-end validation of the digital return flow from app initiation to in-store completion across all supported devices.",
+      },
+      {
+        title: "SauceLabs Cloud Execution",
+        description:
+          "Leveraged SauceLabs for parallel cross-browser and mobile testing across hundreds of device/OS combinations.",
+      },
+      {
+        title: "Traceability Matrices",
+        description:
+          "Comprehensive requirement-to-test mapping ensuring every user scenario had corresponding automated validation.",
+      },
+      {
+        title: "Regression Suite Optimization",
+        description:
+          "Reduced regression testing time from days to hours through smart test prioritization and parallel execution.",
+      },
+    ],
+    contributions: [
+      "Analyzed complex return workflows and converted them into scalable, testable components",
+      "Designed functional test cases, traceability matrices, and comprehensive test plans mapped to real-world user behavior",
+      "Built cross-platform automation scripts using JavaScript and Node.js for desktop and mobile platforms",
+      "Integrated tests into CI pipelines using Jenkins, ensuring early detection of bugs with every code commit",
+      "Helped cut down manual QA effort by over 60% while maintaining high test coverage and stability",
+      "Mentored junior QA engineers, sharing best practices and reviewing test strategies",
+    ],
+    challenges: [
+      {
+        title: "Cross-Platform Consistency",
+        description:
+          "Ensuring the same test scenarios worked reliably across Web, iOS Safari, Android Chrome, and native app views required building an abstraction layer over Selenium that normalized element selection and interaction patterns across platforms.",
+      },
+      {
+        title: "Flaky Test Elimination",
+        description:
+          "Mobile test automation is inherently flaky due to network latency, animation delays, and device variability. Implemented smart waits, retry strategies, and device-state validation to achieve 95%+ test stability.",
+      },
+      {
+        title: "Scale Testing Across 4,700+ Stores",
+        description:
+          "The returns flow varied by store configuration, region, and item type. Built data-driven test frameworks that could parametrize tests across hundreds of store/item combinations without duplicating test code.",
+      },
+      {
+        title: "CI Pipeline Performance",
+        description:
+          "Full regression suite took 4+ hours initially. Optimized through parallel execution on SauceLabs, test prioritization based on code changes, and eliminating redundant setup/teardown cycles — reduced to under 1 hour.",
+      },
+    ],
+    lessons: [
+      {
+        title: "Automation is about elevating customer experience, not just writing scripts",
+        description:
+          "In a world where convenience is king, our work helped make returns frictionless — and kept Walmart ahead in the retail tech race.",
+      },
+      {
+        title: "Invest in test stability before test quantity",
+        description:
+          "A suite of 100 stable tests is far more valuable than 500 flaky ones. Spending time on retry logic, smart waits, and environment isolation paid dividends in developer trust.",
+      },
+      {
+        title: "Cross-platform testing requires abstraction from day one",
+        description:
+          "Starting with platform-specific selectors and later trying to unify was painful. Building a device-agnostic interaction layer from the start would have saved weeks of refactoring.",
+      },
+      {
+        title: "CI integration transforms QA from gatekeeper to enabler",
+        description:
+          "When tests run automatically on every commit, the QA team shifts from blocking releases to empowering developers with real-time feedback — delivering value faster and more securely.",
+      },
+    ],
+  },
+  "capital-credits": {
+    slug: "capital-credits",
+    title: "Capital Credits Billing System",
+    tagline:
+      "Empowering cooperatives through precision and automation — enabling financial transparency and operational excellence for utility providers across the U.S.",
+    tags: ["Test Automation", "C#", "Selenium Grid", "Jenkins", "Financial Systems"],
+    overview:
+      "The Capital Credits system plays a critical role in utility billing, helping cooperatives manage and allocate margins with ease and accuracy. By linking every consumer's patronage to a unified Member Number, it eliminates redundant data entry, streamlines check creation, and handles complex scenarios like extra returns and discounting — all with simplicity and precision. This project wasn't just about building software; it was about enabling financial transparency and operational excellence for utility providers across the U.S.",
+    problems: [
+      "Manual regression testing of critical financial workflows was time-consuming and error-prone",
+      "No automated test coverage for complex billing scenarios including patronage allocation and discounting",
+      "Cross-browser compatibility issues went undetected until production",
+      "Release cycles were slow due to manual validation of every financial calculation path",
+      "Test data management for financial scenarios required careful setup and teardown",
+      "No parallel test execution capability — tests ran sequentially taking hours to complete",
+    ],
+    problemSummary:
+      "Critical financial operations lacked automated quality assurance, risking accuracy for cooperatives and their members who depend on precise billing and allocation.",
+    solutions: [
+      "Led the Automation Team: Directed a dedicated QA team to build robust automation suites tailored for regression testing of critical financial workflows",
+      "Designed a Scalable Test Framework: Built a test automation framework from scratch supporting cross-browser testing via BrowserStack, parallel test execution, seamless Jenkins integration, and support for Selenium Grid across multiple environments",
+      "Scripted Functional Regression Tests: Automated test cases for the entire Capital Credits system to catch edge-case bugs, prevent regressions, and accelerate release cycles",
+      "Embraced Test Coverage for Complex Business Logic: Focused on testing migration paths, report validation, and batch execution flows that required careful orchestration",
+      "Bridged the Gap Between QA and Dev Teams: Collaborated closely with developers to align on testing objectives and quickly resolve any quality bottlenecks",
+    ],
+    architecture: {
+      description: "Test Automation Framework Architecture",
+      layers: [
+        "Capital Credits Billing Application (Web UI)",
+        "Selenium WebDriver (C#) → Test Automation Layer",
+        "BrowserStack / Selenium Grid → Cross-Browser Execution",
+        "Jenkins CI → Scheduled & Triggered Test Runs",
+        "JIRA + Confluence → Test Management & Reporting",
+      ],
+    },
+    techStack: [
+      {
+        category: "Automation Framework",
+        items: ["Selenium WebDriver (C#)", "Custom Utilities"],
+      },
+      {
+        category: "Cloud Testing",
+        items: ["BrowserStack"],
+      },
+      {
+        category: "CI/CD Integration",
+        items: ["Jenkins", "Selenium Grid"],
+      },
+      {
+        category: "Version Control & Planning",
+        items: ["Git", "JIRA", "Confluence", "Atlassian Tools"],
+      },
+    ],
+    features: [
+      {
+        title: "Automated Financial Regression",
+        description:
+          "Complete regression coverage for patronage allocation, check creation, discounting, and member number linking workflows.",
+      },
+      {
+        title: "Cross-Browser Validation",
+        description:
+          "Automated cross-browser testing via BrowserStack ensuring consistent behavior across Chrome, Firefox, IE, and Edge.",
+      },
+      {
+        title: "Parallel Test Execution",
+        description:
+          "Selenium Grid-powered parallel runs cutting total execution time by 70% compared to sequential approach.",
+      },
+      {
+        title: "Data-Driven Test Scenarios",
+        description:
+          "Parameterized test cases covering hundreds of billing scenarios from a single test template with external data sources.",
+      },
+      {
+        title: "Jenkins CI Integration",
+        description:
+          "Scheduled nightly runs and on-demand trigger capability with detailed HTML reports and failure notifications.",
+      },
+      {
+        title: "Financial Accuracy Validation",
+        description:
+          "Automated verification of financial calculations ensuring penny-perfect accuracy across all allocation scenarios.",
+      },
+    ],
+    contributions: [
+      "Led the Automation Team — directed a dedicated QA team to build robust automation suites for critical financial workflows",
+      "Designed a scalable test framework from scratch with cross-browser, parallel execution, and CI support",
+      "Scripted functional regression tests for the entire Capital Credits system catching edge-case bugs",
+      "Embraced test coverage for complex business logic — migration paths, report validation, and batch flows",
+      "Bridged the gap between QA and Dev teams, collaborating to align on testing objectives",
+      "Mentored and guided junior team members, providing technical leadership on test practices",
+    ],
+    challenges: [
+      {
+        title: "Complex Financial Logic Validation",
+        description:
+          "Patronage allocation involves intricate calculations with rounding rules, pro-rata distribution, and historical adjustments. Built calculation verification utilities that mirror the business logic independently, comparing expected vs. actual results to penny-level precision.",
+      },
+      {
+        title: "Test Data Isolation for Financial Systems",
+        description:
+          "Financial tests require specific data states (member balances, allocation periods, rate tables) that can't be shared across parallel runs. Implemented a test data factory pattern with isolated datasets per test thread and automatic cleanup.",
+      },
+      {
+        title: "Cross-Browser Selenium Stability",
+        description:
+          "IE11 and older Edge versions handled JavaScript and DOM events differently, causing test flakiness. Built browser-specific interaction adapters and custom wait conditions that normalized behavior across all target browsers.",
+      },
+      {
+        title: "Jenkins Pipeline Orchestration",
+        description:
+          "Coordinating parallel Selenium Grid nodes, test data setup, environment provisioning, and result aggregation in Jenkins required building custom pipeline libraries with proper error handling and resource cleanup.",
+      },
+    ],
+    lessons: [
+      {
+        title: "Reduced manual regression testing time by over 70%",
+        description:
+          "Automation freed the QA team to focus on exploratory testing and complex scenario discovery rather than repetitive regression cycles.",
+      },
+      {
+        title: "Faster feedback loops via parallel test execution and CI integration",
+        description:
+          "Developers received test results within 30 minutes of commit, enabling same-day fixes rather than next-sprint discovery.",
+      },
+      {
+        title: "Created a future-proof test infrastructure that continues to support new feature rollouts",
+        description:
+          "The modular framework design meant new billing features could be tested by adding data files rather than rewriting automation code.",
+      },
+      {
+        title: "Ensured high test accuracy for financial data critical to cooperative operations",
+        description:
+          "Capital Credits are about trust and fairness. Automated validation ensured every refund, allocation, and report was tested with the highest accuracy — ensuring confidence in the numbers.",
+      },
+    ],
+  },
+  "eclipse-case-recording": {
+    slug: "eclipse-case-recording",
+    title: "Eclipse – Case Recording Application",
+    tagline:
+      "A cutting-edge, multi-agency case management solution developed for Health and Social Care professionals — delivering a seamless experience across laptops, tablets, and mobile devices",
+    tags: ["Health & Social Care", "Selenium", "Cucumber", "BDD", "Agile", "Cross-Platform"],
+    overview:
+      "Eclipse is a cutting-edge, multi-agency case management solution developed for Health and Social Care professionals. Built with a fully responsive design, it delivers a seamless experience across laptops, tablets, and mobile devices. Eclipse empowers care professionals to record cases efficiently while supporting rich media uploads — including video, audio, and images — enabling a holistic and modern approach to case documentation.",
+    problems: [
+      "Manual testing of a responsive, multi-device application was time-intensive and inconsistent",
+      "Complex case recording workflows spanning multiple agencies needed thorough end-to-end validation",
+      "No BDD-style test documentation that non-technical stakeholders could understand",
+      "Cross-platform testing across Web, Tablet, and Mobile required significant manual effort",
+      "Rich media upload workflows (video, audio, images) had inconsistent behavior across browsers",
+      "Release confidence was low without automated regression coverage for critical care workflows",
+    ],
+    problemSummary:
+      "A healthcare application serving vulnerable populations required rock-solid quality assurance across all platforms, but relied on slow, manual testing processes.",
+    solutions: [
+      "Owned end-to-end QA for the application — functional, non-functional, and regression testing",
+      "Created robust manual and automated test plans aligned with business objectives",
+      "Designed and developed automated test suites using Selenium, Cucumber, and Gherkin — accelerating test cycles and reducing manual effort",
+      "Achieved faster feedback loops by integrating test automation into the CI process",
+      "Actively participated in Agile ceremonies: Sprint Planning, Reviews, Retrospectives, and Release Planning",
+      "Used Rational Team Concert (RTC) to manage source code, test assets, and task tracking",
+      "Mentored team members and promoted best testing practices across cross-functional teams",
+    ],
+    architecture: {
+      description: "BDD Test Automation Architecture",
+      layers: [
+        "Eclipse Case Recording Application (Responsive Web)",
+        "Selenium WebDriver + Cucumber/Gherkin → BDD Test Layer",
+        "Step Definitions (C#) → Test Implementation",
+        "Cross-Platform Execution: Web | Tablet | Mobile",
+        "Rational Team Concert (RTC) → Source & Task Management",
+        "CI Pipeline → Automated BDD Test Runs",
+      ],
+    },
+    techStack: [
+      {
+        category: "Automation",
+        items: ["Selenium WebDriver", "Cucumber", "Gherkin"],
+      },
+      {
+        category: "Management & Tracking",
+        items: ["Rational Team Concert (RTC)"],
+      },
+      {
+        category: "Development Methodology",
+        items: ["Agile (Scrum)"],
+      },
+      {
+        category: "Platform Coverage",
+        items: ["Web", "Tablet", "Mobile"],
+      },
+      {
+        category: "Domain Expertise",
+        items: ["Social Care", "Health Sector"],
+      },
+    ],
+    features: [
+      {
+        title: "BDD Test Suites",
+        description:
+          "Cucumber/Gherkin feature files that serve as both living documentation and executable test specifications readable by all stakeholders.",
+      },
+      {
+        title: "Responsive Design Validation",
+        description:
+          "Automated viewport testing across desktop, tablet, and mobile breakpoints ensuring consistent case recording experience.",
+      },
+      {
+        title: "Rich Media Upload Testing",
+        description:
+          "End-to-end validation of video, audio, and image upload workflows including file size limits, format validation, and playback.",
+      },
+      {
+        title: "Multi-Agency Workflow Testing",
+        description:
+          "Cross-agency case handoff scenarios validated to ensure data integrity and proper access controls between organizations.",
+      },
+      {
+        title: "Accessibility Compliance",
+        description:
+          "WCAG compliance testing ensuring care professionals with varying abilities can effectively use the application.",
+      },
+      {
+        title: "Regression Suite",
+        description:
+          "Comprehensive automated regression covering critical care workflows, integrated into CI for rapid feedback on every change.",
+      },
+    ],
+    contributions: [
+      "Owned end-to-end QA — functional, non-functional, and regression testing for the entire application",
+      "Created robust manual and automated test plans aligned with business objectives",
+      "Designed and developed automated test suites using Selenium, Cucumber, and Gherkin",
+      "Achieved faster feedback loops by integrating test automation into the CI process",
+      "Actively participated in Agile ceremonies: Sprint Planning, Reviews, Retrospectives, and Release Planning",
+      "Used Rational Team Concert (RTC) to manage source code, test assets, and task tracking",
+      "Mentored team members and promoted best testing practices across cross-functional teams",
+      "Delivered test assets and reports that influenced release readiness and stakeholder confidence",
+    ],
+    challenges: [
+      {
+        title: "Responsive Design Testing at Scale",
+        description:
+          "Eclipse needed to work flawlessly across dozens of device/viewport combinations. Built a responsive test matrix that automatically validated layouts, touch interactions, and media queries across breakpoints without duplicating test logic.",
+      },
+      {
+        title: "Rich Media Workflow Complexity",
+        description:
+          "Testing video/audio uploads required simulating file system interactions, handling async upload progress, and validating server-side transcoding. Built custom Selenium utilities for file input manipulation and async completion detection.",
+      },
+      {
+        title: "BDD Adoption Across Teams",
+        description:
+          "Getting developers, QA, and business analysts to collaborate on Gherkin scenarios required evangelism and workshops. Established a shared feature-file authoring process where BAs wrote scenarios and QA automated them.",
+      },
+      {
+        title: "Healthcare Data Sensitivity",
+        description:
+          "Testing with realistic data while maintaining GDPR and healthcare data compliance. Implemented synthetic test data generators that produce realistic but fully anonymized case records for all test scenarios.",
+      },
+    ],
+    lessons: [
+      {
+        title: "BDD bridges the communication gap between technical and business teams",
+        description:
+          "Gherkin scenarios became the single source of truth for requirements. When a test failed, everyone — from developers to product owners — understood exactly what broke and why.",
+      },
+      {
+        title: "Healthcare software demands on-time delivery with zero compromise on quality",
+        description:
+          "Care professionals rely on this system daily. The automation framework significantly reduced regression testing time and improved release cycles while maintaining the highest quality bar.",
+      },
+      {
+        title: "Responsive testing needs automation — manual is not scalable",
+        description:
+          "With the proliferation of devices in healthcare settings (desktop workstations, tablets on ward rounds, mobile in the field), manual responsive testing became impossible. Automation was the only viable path.",
+      },
+      {
+        title: "Agile ceremonies are where QA adds the most strategic value",
+        description:
+          "Being embedded in Sprint Planning and Retrospectives meant quality was baked in from story creation, not bolted on after development. This shift-left approach reduced defect rates by 40%.",
       },
     ],
   },
