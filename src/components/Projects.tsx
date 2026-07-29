@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { projects } from "@/data/projects";
 import { BarChart3, Rocket, ShieldCheck, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const iconMap: Record<string, React.ReactNode> = {
   BarChart3: <BarChart3 size={24} className="text-[var(--color-accent-light)]" />,
@@ -61,12 +62,12 @@ export default function Projects() {
               ))}
             </div>
 
-            <a
-              href={project.link}
+            <Link
+              href={`/projects/${project.slug}`}
               className="inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--color-accent-light)] group-hover:gap-3 transition-all duration-300"
             >
               View Case Study <ArrowRight size={14} />
-            </a>
+            </Link>
           </motion.div>
         ))}
       </div>
