@@ -2,8 +2,22 @@
 
 import { motion } from "framer-motion";
 import { Send } from "lucide-react";
+import { useState } from "react";
 
 export default function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const subject = encodeURIComponent(`Portfolio Contact from ${name}`);
+    const body = encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\n\n${message}`
+    );
+    window.location.href = `mailto:rajeshojha@outlook.com?subject=${subject}&body=${body}`;
+  };
+
   return (
     <section id="contact" className="py-24 md:py-32 px-6 md:px-20">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20">
@@ -61,21 +75,30 @@ export default function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          onSubmit={(e) => e.preventDefault()}
+          onSubmit={handleSubmit}
         >
           <input
             type="text"
             placeholder="Your name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
             className="w-full px-5 py-4 bg-[var(--color-card)] border border-[var(--color-border)] rounded-xl text-white text-sm outline-none focus:border-[var(--color-accent)] focus:shadow-[0_0_0_3px_var(--color-accent-glow)] transition-all duration-300 placeholder:text-[var(--color-muted)]"
           />
           <input
             type="email"
             placeholder="Your email address"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
             className="w-full px-5 py-4 bg-[var(--color-card)] border border-[var(--color-border)] rounded-xl text-white text-sm outline-none focus:border-[var(--color-accent)] focus:shadow-[0_0_0_3px_var(--color-accent-glow)] transition-all duration-300 placeholder:text-[var(--color-muted)]"
           />
           <textarea
             placeholder="Your message..."
             rows={5}
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            required
             className="w-full px-5 py-4 bg-[var(--color-card)] border border-[var(--color-border)] rounded-xl text-white text-sm outline-none focus:border-[var(--color-accent)] focus:shadow-[0_0_0_3px_var(--color-accent-glow)] transition-all duration-300 resize-y placeholder:text-[var(--color-muted)]"
           />
           <button
