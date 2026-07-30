@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer className="px-6 md:px-20 py-10 border-t border-[var(--color-border)] flex flex-col md:flex-row justify-between items-center gap-4">
       <p className="text-sm text-[var(--color-muted)]">
-        © 2026 Rajesh Ojha. Designed with precision.
+        © 2026 Rajesh Ojha. All rights reserved.
       </p>
       <div className="flex gap-4">
         <a

@@ -27,11 +27,11 @@ export default function Hero() {
         </div>
 
         <h1 className="font-['Space_Grotesk',sans-serif] text-5xl md:text-7xl font-extrabold leading-[1.05] tracking-tight mb-6">
-          Crafting
+          Building
           <br />
           <span className="gradient-text">Scalable</span>
           <br />
-          Digital Systems
+          Software
         </h1>
 
         <p className="text-lg text-[var(--color-secondary)] max-w-md mb-10 leading-relaxed">
