@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Rajesh Ojha — Senior Software Engineer",
+  title: "Rajesh Ojha | Senior Software Engineer",
   description:
     "Building scalable backend services, engineering platforms & AI-powered applications. 12+ years of experience across enterprise teams.",
   icons: {
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     apple: "/site-icon.png",
   },
   openGraph: {
-    title: "Rajesh Ojha — Senior Software Engineer",
+    title: "Rajesh Ojha | Senior Software Engineer",
     description:
       "Building scalable backend services, engineering platforms & AI-powered applications.",
     url: "https://rajeshojha.in",
