@@ -59,6 +59,7 @@ export default function Contact() {
           <div className="flex flex-col gap-4">
             <a
               href="https://linkedin.com/in/rajeshojhain"
+              aria-label="LinkedIn"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 text-[var(--color-secondary)] hover:text-[var(--color-accent-light)] transition-colors"
@@ -77,6 +78,7 @@ export default function Contact() {
             </a>
             <a
               href="https://github.com/rajeshojha"
+              aria-label="GitHub"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 text-[var(--color-secondary)] hover:text-[var(--color-accent-light)] transition-colors"

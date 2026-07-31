@@ -7,6 +7,7 @@ export default function Footer() {
       <div className="flex gap-4">
         <a
           href="https://linkedin.com/in/rajeshojhain"
+          aria-label="LinkedIn"
           target="_blank"
           rel="noopener noreferrer"
           className="w-10 h-10 rounded-lg border border-[var(--color-border)] flex items-center justify-center text-[var(--color-secondary)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent-light)] hover:bg-[var(--color-accent-glow)] hover:-translate-y-1 transition-all duration-300"
@@ -15,6 +16,7 @@ export default function Footer() {
         </a>
         <a
           href="https://github.com/rajeshojha"
+          aria-label="GitHub"
           target="_blank"
           rel="noopener noreferrer"
           className="w-10 h-10 rounded-lg border border-[var(--color-border)] flex items-center justify-center text-[var(--color-secondary)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent-light)] hover:bg-[var(--color-accent-glow)] hover:-translate-y-1 transition-all duration-300"
@@ -23,6 +25,7 @@ export default function Footer() {
         </a>
         <a
           href="https://x.com/rajeshojha"
+          aria-label="X (Twitter)"
           target="_blank"
           rel="noopener noreferrer"
           className="w-10 h-10 rounded-lg border border-[var(--color-border)] flex items-center justify-center text-[var(--color-secondary)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent-light)] hover:bg-[var(--color-accent-glow)] hover:-translate-y-1 transition-all duration-300 font-bold text-sm"
