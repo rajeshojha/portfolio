@@ -5,6 +5,11 @@ export const metadata: Metadata = {
   title: "Rajesh Ojha — Senior Software Engineer",
   description:
     "Building scalable backend services, engineering platforms & AI-powered applications. 12+ years of experience across enterprise teams.",
+  icons: {
+    icon: "/site-icon.png",
+    shortcut: "/site-icon.png",
+    apple: "/site-icon.png",
+  },
   openGraph: {
     title: "Rajesh Ojha — Senior Software Engineer",
     description:
