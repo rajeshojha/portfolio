@@ -78,34 +78,37 @@ export default function Hero() {
           {/* Floating cards */}
           <div className="absolute -top-2 -right-6 animate-float">
             <div className="px-5 py-3 bg-[var(--color-card)] border border-[var(--color-border)] rounded-xl shadow-[0_8px_32px_rgba(0,0,0,0.3)]">
-              <div className="text-[10px] uppercase tracking-widest text-[var(--color-muted)]">
-                Experience
-              </div>
               <div className="font-['Space_Grotesk',sans-serif] text-xl font-bold gradient-text">
                 12+ yrs
+              </div>
+              <div className="text-[10px] uppercase tracking-widest text-[var(--color-secondary)]">
+                Experience
               </div>
             </div>
           </div>
 
           <div className="absolute bottom-16 -left-12 animate-float-delayed">
             <div className="px-5 py-3 bg-[var(--color-card)] border border-[var(--color-border)] rounded-xl shadow-[0_8px_32px_rgba(0,0,0,0.3)]">
-              <div className="text-[10px] uppercase tracking-widest text-[var(--color-muted)]">
-                Projects
-              </div>
               <div className="font-['Space_Grotesk',sans-serif] text-xl font-bold gradient-text">
                 30+
+              </div>
+              <div className="text-[10px] uppercase tracking-widest text-[var(--color-secondary)]">
+                Projects<br />
+                Delivered
               </div>
             </div>
           </div>
 
           <div className="absolute -bottom-4 right-8 animate-float-delayed-2">
             <div className="px-5 py-3 bg-[var(--color-card)] border border-[var(--color-border)] rounded-xl shadow-[0_8px_32px_rgba(0,0,0,0.3)]">
-              <div className="text-[10px] uppercase tracking-widest text-[var(--color-muted)]">
-                Countries
-              </div>
               <div className="font-['Space_Grotesk',sans-serif] text-xl font-bold gradient-text">
-                6+
+                20+
               </div>
+              <div className="text-[10px] uppercase tracking-widest text-[var(--color-secondary)]">
+                Happy
+                Clients
+              </div>
+
             </div>
           </div>
         </div>
