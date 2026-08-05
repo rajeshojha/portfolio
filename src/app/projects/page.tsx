@@ -14,6 +14,7 @@ import {
   Download,
 } from "lucide-react";
 import Link from "next/link";
+import { Analytics } from "@vercel/analytics/next"
 
 const iconMap: Record<string, React.ReactNode> = {
   BarChart3: (
@@ -142,6 +143,7 @@ export default function ProjectsPage() {
           </Link>
         </div>
       </section>
+      <Analytics />
     </main>
   );
 }

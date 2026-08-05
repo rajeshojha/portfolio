@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import type { CaseStudy } from "@/data/case-studies";
+import { Analytics } from "@vercel/analytics/next"
 
 const challengeIcons = [Zap, Shield, ExternalLink, Shield, Database, Rocket];
 
@@ -322,6 +323,7 @@ function Section({
         </motion.h2>
         {children}
       </div>
+      <Analytics />
     </section>
   );
 }
