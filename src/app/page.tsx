@@ -12,6 +12,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
+      <Analytics /> 
       <Hero />
       <TechMarquee />
       <Projects />
@@ -19,7 +20,6 @@ export default function Home() {
       <Skills />
       <Contact />
       <Footer />
-      <Analytics /> 
     </>
   );
 }
