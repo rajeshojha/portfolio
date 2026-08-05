@@ -81,7 +81,7 @@ export default function Hero() {
               <div className="font-['Space_Grotesk',sans-serif] text-xl font-bold gradient-text">
                 12+ yrs
               </div>
-              <div className="text-[10px] uppercase tracking-widest text-[var(--color-secondary)]">
+              <div className="text-[10px] uppercase tracking-widest text-[var(--color-muted)]">
                 Experience
               </div>
             </div>
@@ -92,7 +92,7 @@ export default function Hero() {
               <div className="font-['Space_Grotesk',sans-serif] text-xl font-bold gradient-text">
                 30+
               </div>
-              <div className="text-[10px] uppercase tracking-widest text-[var(--color-secondary)]">
+              <div className="text-[10px] uppercase tracking-widest text-[var(--color-muted)]">
                 Projects<br />
                 Delivered
               </div>
@@ -104,7 +104,7 @@ export default function Hero() {
               <div className="font-['Space_Grotesk',sans-serif] text-xl font-bold gradient-text">
                 20+
               </div>
-              <div className="text-[10px] uppercase tracking-widest text-[var(--color-secondary)]">
+              <div className="text-[10px] uppercase tracking-widest text-[var(--color-muted)]">
                 Happy
                 Clients
               </div>
